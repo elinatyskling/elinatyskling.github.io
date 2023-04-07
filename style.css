@@ -20,6 +20,7 @@ select {
   border: none;
   padding: 10px;
   margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.2);
 }
 
 /* Style the calculate button */
