@@ -52,12 +52,12 @@
 			}
 
 			var result = Math.sqrt(reach) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * 50;
-			result = result.toFixed(2);
-                        result = result.toLocaleString("en-US", { style: "currency", currency: "SEK" });
+		
+                        //result = result.toLocaleString("en-US", { style: "currency", currency: "SEK" });
 
 
 			//document.getElementById("result").innerHTML = result.toFixed(2);
-			document.getElementById("result").innerHTML = result;
+			document.getElementById("result").innerHTML = result.toFixed(2)+'SEK';;
 		}
 	</script>
 
