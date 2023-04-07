@@ -4,7 +4,7 @@ body {
 
 /* Style input fields */
 input {
-  background-color: black;
+  background-color: #BF40BF;
   color: white;
   border: none;
   padding: 10px;
@@ -13,7 +13,7 @@ input {
 
 /* Style select fields */
 select {
-  background-color: black;
+  background-color: #BF40BF;
   color: white;
   border: none;
   padding: 10px;
@@ -22,7 +22,7 @@ select {
 
 /* Style the calculate button */
 input[type=button] {
-  background-color:  #000000;
+  background-color:  #BF40BF;
   color: white;
   padding: 10px 20px;
   border: none;
