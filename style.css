@@ -1,17 +1,16 @@
-/* Style form labels */
+/* Style input fields and labels */
 label, input {
   display: block;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-/* Style input fields */
 input {
   background-color: #BF40BF;
   color: white;
   border: none;
   padding: 10px;
-  margin-bottom: 10px;
-  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.2);
 }
 
 /* Style select fields */
@@ -21,12 +20,11 @@ select {
   border: none;
   padding: 10px;
   margin-bottom: 10px;
-  width: 100%;
 }
 
 /* Style the calculate button */
 input[type=button] {
-  background-color:  #BF40BF;
+  background-color: #BF40BF;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -37,5 +35,4 @@ input[type=button] {
 #result {
   font-size: 45px;
   margin-top: 20px;
-  text-align: center;
 }
