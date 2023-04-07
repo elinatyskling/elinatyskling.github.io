@@ -36,14 +36,14 @@ Copy code
 
 			var buyoutsFactor = 1;
 			if (buyouts == "yes") {
-				buyoutsFactor = 2;
+				buyoutsFactor = 1.1;
 			}
 
 			var complexityFactor = 1;
 			if (complexity == "medium") {
-				complexityFactor = 1.5;
+				complexityFactor = 1.2;
 			} else if (complexity == "high") {
-				complexityFactor = 2;
+				complexityFactor = 1.3;
 			}
 
 			var result = Math.sqrt(reach) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * 50;
