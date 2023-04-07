@@ -35,22 +35,8 @@ input[type=button] {
   margin-top: 20px;
 }
 
-/* Style the blocks */
-.block {
-  background-color: #F0F0F0;
-  border: 2px solid #CCCCCC;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.block label {
+/* Style the labels */
+label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.block input,
-.block select {
-  width: 100%;
-  box-sizing: border-box;
 }
