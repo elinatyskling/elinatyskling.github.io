@@ -19,6 +19,9 @@
 			var nich = document.getElementById("nich").value;
 			var buyouts = document.getElementById("buyouts").value;
 			var complexity = document.getElementById("complexity").value;
+			var videos = parseFloat(document.getElementById("videos").value);
+
+
 
 			var engagementRateFactor = 1;
 			if (engagementRate == "normal") {
@@ -44,6 +47,15 @@
 			if (buyouts == "yes") {
 				buyoutsFactor = 1.18;
 			}
+			
+			var videoFactor = 1;
+			if (videos == 1) {
+				videoFactor = 1;
+			} else if (videos == 2) {
+				videoFactor = 1.07;
+			} else if (videos == 3) {
+				videoFactor = 1.09;
+			}
 
 			var complexityFactor = 1;
 			if (complexity == "medium") {
@@ -59,7 +71,7 @@
 			var G9 = 0.05;
 			var G11 = 0.065;
 
-			var result = (G3+(reach<G8?G7*reach:(G10>reach?(reach-G8)*G9+G8*G7:G7*G8+(G10-G8)*G9+(reach-G10)*G11)))* engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * 1.08;
+			var result = (G3+(reach<G8?G7*reach:(G10>reach?(reach-G8)*G9+G8*G7:G7*G8+(G10-G8)*G9+(reach-G10)*G11)))* engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videos * 1.08;
                         document.getElementById("result").innerHTML = result.toFixed(2) + ' SEK';
 			
 			
@@ -103,6 +115,13 @@
 			<option value="medium">Medium</option>
 			<option value="high">High</option>
 		</select><br>
+		
+		<label for="videosProduced">Number of videos produced:</label>
+	        <select id="videosProduced" name="videosProduced">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+	      </select><br>
 
 	<input type="button" value="Calculate" onclick="calculate()">
 		
