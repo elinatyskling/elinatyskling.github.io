@@ -71,7 +71,7 @@
 			var G9 = 0.05;
 			var G11 = 0.065;
 
-			var result = (G3+(reach<G8?G7*reach:(G10>reach?(reach-G8)*G9+G8*G7:G7*G8+(G10-G8)*G9+(reach-G10)*G11)))* engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videos * 1.08;
+			var result = (G3+(reach<G8?G7*reach:(G10>reach?(reach-G8)*G9+G8*G7:G7*G8+(G10-G8)*G9+(reach-G10)*G11)))* engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.08;
                         document.getElementById("result").innerHTML = result.toFixed(2) + ' SEK';
 			
 			
