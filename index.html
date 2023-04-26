@@ -19,7 +19,7 @@
 			var nich = document.getElementById("nich").value;
 			var buyouts = document.getElementById("buyouts").value;
 			var complexity = document.getElementById("complexity").value;
-			var videos = parseFloat(document.getElementById("videos").value);
+			var videos = parseFloat(document.getElementById("videosProduced").value);
 
 
 
@@ -89,6 +89,7 @@
 		<input type="number" id="reach" name="reach"><br>
 
 		<label for="engagementRate">Engagement Rate:</label>
+		<label>Do you require the influencers to have a high engagement rate, or is this not important to you?</label>
 		<select id="engagementRate" name="engagementRate">
 			<option value="normal">Normal</option>
 			<option value="medium">Medium</option>
@@ -97,6 +98,7 @@
 		</select><br>
 
 		<label for="nich">Niche:</label>
+		<label>How niched is the product you are selling? Is it something most influencer could do content around, or is it something it make sense very niched influencers promote?</label>
 		<select id="nich" name="nich">
 			<option value="1">Not Niched product</option>
 			<option value="2">Somewhat niched product</option>
@@ -104,12 +106,14 @@
 		</select><br>
 
 		<label for="buyouts">Buyouts:</label>
+		<label>Do you want to include the right to use the material in paid advertising on social media?</label>
 		<select id="buyouts" name="buyouts">
 			<option value="no">No</option>
 			<option value="yes">Yes</option>
 		</select><br>
 
 		<label for="complexity">Complexity:</label>
+		<label>How complex are the videos you want the influencers to create? Do the require a lot of planning, cutting and changing of locations, or can they be made in one place?</label>
 		<select id="complexity" name="complexity">
 			<option value="low">Low</option>
 			<option value="medium">Medium</option>
