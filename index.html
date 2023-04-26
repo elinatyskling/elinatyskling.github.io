@@ -26,23 +26,23 @@
 			} else if (engagementRate == "medium-low") {
 				engagementRateFactor = 1.01;
 			} else if (engagementRate == "medium") {
-				engagementRateFactor = 1.02;
-			} else if (engagementRate == "high") {
-				engagementRateFactor = 1.03;
-			} else if (engagementRate == "very high") {
 				engagementRateFactor = 1.04;
+			} else if (engagementRate == "high") {
+				engagementRateFactor = 1.06;
+			} else if (engagementRate == "very high") {
+				engagementRateFactor = 1.07;
 			}
 
 			var nichFactor = 1;
 			if (nich == "2") {
-				nichFactor = 1.03;
+				nichFactor = 1.04;
 			} else if (nich == "3") {
-				nichFactor = 1.05;
+				nichFactor = 1.06;
 			}
 
 			var buyoutsFactor = 1;
 			if (buyouts == "yes") {
-				buyoutsFactor = 1.15;
+				buyoutsFactor = 1.18;
 			}
 
 			var complexityFactor = 1;
