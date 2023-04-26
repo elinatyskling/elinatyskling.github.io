@@ -1,9 +1,16 @@
 /* Style input fields and labels */
-label, input {
+input {
   display: block;
   margin-bottom: 10px;
  
 }
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
 
 input {
   background-color: #BF40BF;
@@ -39,6 +46,11 @@ input[type=button] {
 #result {
   font-size: 45px;
   margin-top: 20px;
+}
+
+#explanation {
+  font-size: 14px;
+  color: #505050;
 }
 
 
