@@ -26,11 +26,11 @@
 			} else if (engagementRate == "medium-low") {
 				engagementRateFactor = 1.15;
 			} else if (engagementRate == "medium") {
-				engagementRateFactor = 1.2;
+				engagementRateFactor = 1.15;
 			} else if (engagementRate == "high") {
-				engagementRateFactor = 1.4;
+				engagementRateFactor = 1.2;
 			} else if (engagementRate == "very high") {
-				engagementRateFactor = 1.5;
+				engagementRateFactor = 1.27;
 			}
 
 			var nichFactor = 1;
@@ -79,7 +79,6 @@
 		<label for="engagementRate">Engagement Rate:</label>
 		<select id="engagementRate" name="engagementRate">
 			<option value="normal">Normal</option>
-			<option value="medium-low">Medium-Low</option>
 			<option value="medium">Medium</option>
 			<option value="high">High</option>
 			<option value="very high">Very High</option>
@@ -87,9 +86,9 @@
 
 		<label for="nich">Niche:</label>
 		<select id="nich" name="nich">
-			<option value="1">Not Niche</option>
-			<option value="2">Somewhat Niche</option>
-			<option value="3">Very Niche</option>
+			<option value="1">Not Niched product</option>
+			<option value="2">Somewhat niched product</option>
+			<option value="3">Very niched product</option>
 		</select><br>
 
 		<label for="buyouts">Buyouts:</label>
