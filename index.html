@@ -80,7 +80,7 @@ if (reach < G8) {
     result = (G3 + (reach * G7) + (reach * G9)) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.08;
 }
 
-document.getElementById("result").value = Math.round(result) + ' SEK';
+document.getElementById("result").innerText = Math.round(result) + ' SEK';
 			
 			
 		}
@@ -137,4 +137,6 @@ document.getElementById("result").value = Math.round(result) + ' SEK';
 	<input type="button" value="Calculate" onclick="calculate()">
 		
 		<div id="result"></div>
+		
+	</form>
 
