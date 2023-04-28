@@ -64,16 +64,24 @@
 				complexityFactor = 1.02;
 			}
 
-			var G3 = 8000;
-			var G8 = 100000;
-			var G7 = 0.085;
-			var G10 = 500000;
-			var G9 = 0.05;
-			var G11 = 0.065;
+double G3 = 8000;
+double G8 = 100000;
+double G7 = 0.085;
+double G10 = 500000;
+double G9 = 0.05;
+double G11 = 0.065;
 
-			var result = (G3+(reach<G8?G7*reach:(G10>reach?(reach-G8)*G9+G8*G7:G7*G8+(G10-G8)*G9+(reach-G10)*G11)))* engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.08;
-                        document.getElementById("result").innerHTML = result.toFixed(2) + ' SEK';
-			
+double result;
+if (reach < G8) {
+    result = (G3 + (reach * G7)) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.08;
+} else if (reach <= G10) {
+    result = (G3 + ((reach - G8) * G9 + G8 * G7)) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.08;
+} else {
+    result = (G3 + (G8 * G7 + (G10 - G8) * G9 + (reach - G10) * G11)) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.08;
+}
+
+System.out.println(String.format("%.2f SEK", result));
+
 			
 			
 		}
