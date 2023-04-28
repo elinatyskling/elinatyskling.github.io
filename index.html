@@ -80,7 +80,7 @@ if (reach < G8) {
     result = (G3 + (reach * G7) + (reach * G9)) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.08;
 }
 
-document.getElementById("result").value = String.format("%.2f SEK", result)
+document.getElementById("result").value = Math.round(result) + ' SEK';
 			
 			
 		}
