@@ -14,16 +14,16 @@
 <body>
 	<script>
 		function calculate() {
-			var reach = parseFloat(document.getElementById("reach").value);
-			var engagementRate = document.getElementById("engagementRate").value;
-			var nich = document.getElementById("nich").value;
-			var buyouts = document.getElementById("buyouts").value;
-			var complexity = document.getElementById("complexity").value;
-			var videos = parseFloat(document.getElementById("videosProduced").value);
+			let reach = parseFloat(document.getElementById("reach").value);
+			let engagementRate = document.getElementById("engagementRate").value;
+			let nich = document.getElementById("nich").value;
+			let buyouts = document.getElementById("buyouts").value;
+			let complexity = document.getElementById("complexity").value;
+			let videos = parseFloat(document.getElementById("videosProduced").value);
 
 
 
-			var engagementRateFactor = 1;
+			let engagementRateFactor = 1;
 			if (engagementRate == "normal") {
 				engagementRateFactor = 1;
 			} else if (engagementRate == "medium-low") {
@@ -36,19 +36,19 @@
 				engagementRateFactor = 1.07;
 			}
 
-			var nichFactor = 1;
+			let nichFactor = 1;
 			if (nich == "2") {
 				nichFactor = 1.05;
 			} else if (nich == "3") {
 				nichFactor = 1.10;
 			}
 
-			var buyoutsFactor = 1;
+			let buyoutsFactor = 1;
 			if (buyouts == "yes") {
 				buyoutsFactor = 1.18;
 			}
 			
-			var videoFactor = 1;
+			let videoFactor = 1;
 			if (videos == 1) {
 				videoFactor = 1;
 			} else if (videos == 2) {
@@ -57,19 +57,19 @@
 				videoFactor = 1.28;
 			}
 
-			var complexityFactor = 1;
+			let complexityFactor = 1;
 			if (complexity == "medium") {
 				complexityFactor = 1.015;
 			} else if (complexity == "high") {
 				complexityFactor = 1.02;
 			}
 
-double G3 = 8000;
-double G8 = 100000;
-double G7 = 0.085;
-double G10 = 500000;
-double G9 = 0.05;
-double G11 = 0.065;
+let G3 = 8000;
+let G8 = 100000;
+let G7 = 0.085;
+let G10 = 500000;
+let G9 = 0.05;
+let G11 = 0.065;
 
 double result;
 if (reach < G8) {
