@@ -33,7 +33,7 @@
 			} else if (engagementRate == "high") {
 				engagementRateFactor = 1.06;
 			} else if (engagementRate == "very high") {
-				engagementRateFactor = 1.07;
+				engagementRateFactor = 1.08;
 			}
 
 			let nichFactor = 1;
@@ -59,17 +59,17 @@
 
 			let complexityFactor = 1;
 			if (complexity == "medium") {
-				complexityFactor = 1.015;
-			} else if (complexity == "high") {
 				complexityFactor = 1.02;
+			} else if (complexity == "high") {
+				complexityFactor = 1.04;
 			}
 
 let fixedcost = 17000;
 let parameter1 = 0.17;
 let break1 = 100000;
-let parameter2 = 0.15;
+let parameter2 = 0.16;
 let break2 = 500000;
-let parameter3 = 0.16;
+let parameter3 = 0.165;
 
 let result;
 if (reach <= break1) {
