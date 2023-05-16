@@ -73,11 +73,11 @@ let parameter3 = 0.153;
 
 let result;
 if (reach <= break1) {
-    result = (fixedcost + (reach * parameter1)) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor;
+    result = (fixedcost + (reach * parameter1)) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.012;
 } else if (reach > break1 && reach <= break2) {
-    result = (fixedcost + (break1 * parameter1) + (reach - break1) * parameter2) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor;
+    result = (fixedcost + (break1 * parameter1) + (reach - break1) * parameter2) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.12;
 } else {
-    result = (fixedcost + (break1 * parameter1) + (break2 - break1) * parameter2 + (reach - break2) * parameter3) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor;
+    result = (fixedcost + (break1 * parameter1) + (break2 - break1) * parameter2 + (reach - break2) * parameter3) * engagementRateFactor * nichFactor * buyoutsFactor * complexityFactor * videoFactor * 1.12;
 }
 
 document.getElementById("result").innerText = Math.round(result) + ' SEK';
